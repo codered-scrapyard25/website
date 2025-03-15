@@ -158,6 +158,75 @@
             margin-bottom: 1rem;
         }
 
+        .dependencies {
+            padding: 4rem 0;
+            background-color: var(--dark-card);
+        }
+
+        .dependencies-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .dependency-item {
+            background-color: #272727;
+            border-radius: 8px;
+            padding: 1.5rem;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .dependency-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(255, 77, 77, 0.2);
+        }
+
+        .dependency-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--zoom-red);
+        }
+
+        .dependency-item p {
+            color: var(--dark-secondary);
+            font-size: 0.9rem;
+        }
+
+        .api-badge {
+            display: inline-block;
+            background-color: #2d62cf;
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .module-badge {
+            display: inline-block;
+            background-color: #2d8ecf;
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
         .download {
             padding: 4rem 0;
             text-align: center;
@@ -183,10 +252,26 @@
             text-align: center;
         }
 
+        .dependency-title {
+            margin-bottom: 0.5rem;
+            color: var(--dark-text);
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
+            }
+
+            .dependencies-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .dependency-item {
+                width: 80%;
             }
         }
     </style>
@@ -216,6 +301,8 @@
                 <h1>Unleash Chaos on Your Zoom Calls</h1>
                 <p>Zoomageddon is the ultimate prank app that will turn your boring video calls into hilarious chaos
                     with random sounds, criticisms, and chat spam!</p>
+                <h4>Powered by Groq AI</h4>
+                <h4>Made with ❤️ by CodeRed. - The Best Scrapyard Team in History</h4>
                 <button class="cta-button">
                     Download Now
                     <svg class="download-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -253,40 +340,112 @@
         </div>
     </section>
 
-    <section class="download">
+    <section class="dependencies">
         <div class="container">
-            <h2>Ready to Cause Some Chaos?</h2>
-            <p>Download Zoomageddon now and transform your boring Zoom calls into unforgettable pranking experiences!
-            </p>
-            <button class="cta-button">
-                Download Zoomageddon
-                <svg class="download-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 15L12 3M12 15L8 11M12 15L16 11" stroke="white" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M2 17L2 19C2 20.1046 2.89543 21 4 21L20 21C21.1046 21 22 20.1046 22 19L22 17"
-                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </button>
-        </div>
-    </section>
+            <h2 class="section-title">Required Dependencies</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: var(--dark-secondary);">The following dependencies
+                are required for Zoomageddon to function properly</p>
 
-    <footer>
-        <div class="container">
-            <p>© 2025 Zoomageddon - The Ultimate Zoom Prank App</p>
-        </div>
-    </footer>
+            <h3 class="dependency-title">External APIs</h3>
+            <div class="dependencies-list">
+                <div class="dependency-item">
+                    <div class="feature-icon">🔊</div>
+                    <h3>unrealspeech</h3>
+                    <p>Text-to-speech for voiced criticisms</p>
+                    <span class="api-badge">API</span>
+                </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const downloadButtons = document.querySelectorAll('.cta-button');
+                <div class="dependency-item">
+                    <div class="feature-icon">🎙️</div>
+                    <h3>assemblyai</h3>
+                    <p>Voice recognition for targeted criticisms</p>
+                    <span class="api-badge">API</span>
+                </div>
 
-            downloadButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    alert('Thanks for your interest in Zoomageddon! This is a concept app demonstration.');
-                });
+                <div class="dependency-item">
+                    <div class="feature-icon">🤖</div>
+                    <h3>groq</h3>
+                    <p>AI text generation for creating random criticisms</p>
+                    <span class="api-badge">API</span>
+                </div>
+            </div>
+
+            <h3 class="dependency-title" style="margin-top: 3rem;">Python Modules</h3>
+            <div class="dependencies-list">
+                <div class="dependency-item">
+                    <div class="feature-icon">🌐</div>
+                    <h3>webbrowser</h3>
+                    <p>For opening browser windows with memes</p>
+                    <span class="module-badge">Module</span>
+                </div>
+
+                <div class="dependency-item">
+                    <div class="feature-icon">🎲</div>
+                    <h3>random</h3>
+                    <p>For generating unpredictable prank timing</p>
+                    <span class="module-badge">Module</span>
+                </div>
+
+                <div class="dependency-item">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>time</h3>
+                    <p>For scheduling pranks during calls</p>
+                    <span class="module-badge">Module</span>
+                </div>
+
+                <div class="dependency-item">
+                    <div class="feature-icon">🖥️</div>
+                    <h3>pygetwindow</h3>
+                    <p>For detecting Zoom windows</p>
+                    <span class="module-badge">Module</span>
+                </div>
+
+                <div class="dependency-item">
+                    <div class="feature-icon">💻</div>
+                    <h3>platform</h3>
+                    <p>For cross-platform compatibility</p>
+                    <span class="module-badge">Module</span>
+                </div>
+
+                <div class="dependency-item">
+                    <div class="feature-icon">🎬</div>
+                    <h3>moviepy</h3>
+                    <p>Audio processing for random sound effects</p>
+                    <span class="version-badge">v1.0.3</spans>
+
+<section class="download">
+    <div class="container">
+        <h2>Ready to Cause Some Chaos?</h2>
+        <p>Download Zoomageddon now and transform your boring Zoom calls into unforgettable pranking experiences!</p>
+        <button class="cta-button">
+            Download Zoomageddon
+            <svg class="download-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 15L12 3M12 15L8 11M12 15L16 11" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M2 17L2 19C2 20.1046 2.89543 21 4 21L20 21C21.1046 21 22 20.1046 22 19L22 17" stroke="white"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2025 CodeRed. - The Best Scrapyard Team in History</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const downloadButtons = document.querySelectorAll('.cta-button');
+
+        downloadButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                alert('Thanks for your interest in Zoomageddon! This is a concept app demonstration.');
             });
         });
-    </script>
+    });
+</script>
 </body>
 
 </html>
