@@ -83,6 +83,12 @@
             margin-right: auto;
         }
 
+        .hero .small-text {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 2rem;
+        }
+
         .cta-button {
             display: inline-flex;
             align-items: center;
@@ -301,6 +307,7 @@
                 <h1>Unleash Chaos on Your Zoom Calls</h1>
                 <p>Zoomageddon is the ultimate prank app that will turn your boring video calls into hilarious chaos
                     with random sounds, criticisms, and chat spam! Powered by Groq AI!</p>
+                <p class="small-text">Made with ❤️ by CodeRed. - The best Scrapyard team in existence</p>
                 <button class="cta-button">
                     Download Now
                     <svg class="download-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -338,112 +345,159 @@
         </div>
     </section>
 
-    <section class="dependencies">
-        <div class="container">
-            <h2 class="section-title">Required Dependencies</h2>
-            <p style="text-align: center; margin-bottom: 2rem; color: var(--dark-secondary);">The following dependencies
-                are required for Zoomageddon to function properly</p>
+<section class="dependencies">
+    <div class="container">
+        <h2 class="section-title">Required Dependencies</h2>
+        <p style="text-align: center; margin-bottom: 2rem; color: var(--dark-secondary);">The following dependencies
+            are required for Zoomageddon to function properly</p>
 
-            <h3 class="dependency-title">External APIs</h3>
-            <div class="dependencies-list">
-                <div class="dependency-item">
-                    <div class="feature-icon">🔊</div>
-                    <h3>unrealspeech</h3>
-                    <p>Text-to-speech for voiced criticisms</p>
-                    <span class="api-badge">API</span>
-                </div>
-
-                <div class="dependency-item">
-                    <div class="feature-icon">🎙️</div>
-                    <h3>assemblyai</h3>
-                    <p>Voice recognition for targeted criticisms</p>
-                    <span class="api-badge">API</span>
-                </div>
-
-                <div class="dependency-item">
-                    <div class="feature-icon">🤖</div>
-                    <h3>groq</h3>
-                    <p>AI text generation for creating random criticisms</p>
-                    <span class="api-badge">API</span>
-                </div>
+        <h3 class="dependency-title">External APIs</h3>
+        <div class="dependencies-list">
+            <div class="dependency-item">
+                <div class="feature-icon">🎙️</div>
+                <h3>assemblyai</h3>
+                <p>Voice recognition for targeted criticisms</p>
+                <span class="api-badge">API</span>
             </div>
 
-            <h3 class="dependency-title" style="margin-top: 3rem;">Python Modules</h3>
-            <div class="dependencies-list">
-                <div class="dependency-item">
-                    <div class="feature-icon">🌐</div>
-                    <h3>webbrowser</h3>
-                    <p>For opening browser windows with memes</p>
-                    <span class="module-badge">Module</span>
-                </div>
+            <div class="dependency-item">
+                <div class="feature-icon">🤖</div>
+                <h3>groq</h3>
+                <p>AI text generation for creating random criticisms</p>
+                <span class="api-badge">API</span>
+            </div>
+        </div>
 
-                <div class="dependency-item">
-                    <div class="feature-icon">🎲</div>
-                    <h3>random</h3>
-                    <p>For generating unpredictable prank timing</p>
-                    <span class="module-badge">Module</span>
-                </div>
+        <h3 class="dependency-title" style="margin-top: 3rem;">Python Modules</h3>
+        <div class="dependencies-list">
+            <div class="dependency-item">
+                <div class="feature-icon">⏱️</div>
+                <h3>time</h3>
+                <p>For scheduling pranks during calls</p>
+                <span class="module-badge">Module</span>
+            </div>
 
-                <div class="dependency-item">
-                    <div class="feature-icon">⏱️</div>
-                    <h3>time</h3>
-                    <p>For scheduling pranks during calls</p>
-                    <span class="module-badge">Module</span>
-                </div>
+            <div class="dependency-item">
+                <div class="feature-icon">🔐</div>
+                <h3>base64</h3>
+                <p>For encoding and decoding data</p>
+                <span class="module-badge">Module</span>
+            </div>
 
-                <div class="dependency-item">
-                    <div class="feature-icon">🖥️</div>
-                    <h3>pygetwindow</h3>
-                    <p>For detecting Zoom windows</p>
-                    <span class="module-badge">Module</span>
-                </div>
+            <div class="dependency-item">
+                <div class="feature-icon">🗣️</div>
+                <h3>pyttsx3</h3>
+                <p>Text-to-speech engine for local voice generation</p>
+                <span class="module-badge">Module</span>
+            </div>
 
-                <div class="dependency-item">
-                    <div class="feature-icon">💻</div>
-                    <h3>platform</h3>
-                    <p>For cross-platform compatibility</p>
-                    <span class="module-badge">Module</span>
-                </div>
+            <div class="dependency-item">
+                <div class="feature-icon">🖱️</div>
+                <h3>pyautogui</h3>
+                <p>For automating GUI interactions</p>
+                <span class="module-badge">Module</span>
+            </div>
 
-                <div class="dependency-item">
-                    <div class="feature-icon">🎬</div>
-                    <h3>moviepy</h3>
-                    <p>Audio processing for random sound effects</p>
-                    <span class="version-badge">v1.0.3</spans>
+            <div class="dependency-item">
+                <div class="feature-icon">🎤</div>
+                <h3>pyaudio</h3>
+                <p>For audio input/output processing</p>
+                <span class="module-badge">Module</span>
+            </div>
 
-<section class="download">
-    <div class="container">
-        <h2>Ready to Cause Some Chaos?</h2>
-        <p>Download Zoomageddon now and transform your boring Zoom calls into unforgettable pranking experiences!</p>
-        <button class="cta-button">
-            Download Zoomageddon
-            <svg class="download-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 15L12 3M12 15L8 11M12 15L16 11" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M2 17L2 19C2 20.1046 2.89543 21 4 21L20 21C21.1046 21 22 20.1046 22 19L22 17" stroke="white"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </button>
+            <div class="dependency-item">
+                <div class="feature-icon">🔊</div>
+                <h3>wave</h3>
+                <p>For audio file processing</p>
+                <span class="module-badge">Module</span>
+            </div>
+
+            <div class="dependency-item">
+                <div class="feature-icon">📂</div>
+                <h3>os</h3>
+                <p>For operating system interactions</p>
+                <span class="module-badge">Module</span>
+            </div>
+
+            <div class="dependency-item">
+                <div class="feature-icon">🎲</div>
+                <h3>random</h3>
+                <p>For generating unpredictable prank timing</p>
+                <span class="module-badge">Module</span>
+            </div>
+
+            <div class="dependency-item">
+                <div class="feature-icon">🎮</div>
+                <h3>pygame</h3>
+                <p>For sound playback and effects</p>
+                <span class="module-badge">Module</span>
+            </div>
+
+            <div class="dependency-item">
+                <div class="feature-icon">🌐</div>
+                <h3>webbrowser</h3>
+                <p>For opening browser windows with memes</p>
+                <span class="module-badge">Module</span>
+            </div>
+
+            <div class="dependency-item">
+                <div class="feature-icon">🧵</div>
+                <h3>threading</h3>
+                <p>For running multiple pranks simultaneously</p>
+                <span class="module-badge">Module</span>
+            </div>
+
+            <div class="dependency-item">
+                <div class="feature-icon">💻</div>
+                <h3>platform</h3>
+                <p>For cross-platform compatibility</p>
+                <span class="module-badge">Module</span>
+            </div>
+
+            <div class="dependency-item">
+                <div class="feature-icon">🖥️</div>
+                <h3>pygetwindow</h3>
+                <p>For detecting Zoom windows</p>
+                <span class="module-badge">Module</span>
+            </div>
+        </div>
     </div>
 </section>
 
-<footer>
-    <div class="container">
-        <p>© 2025 CodeRed. - The Best Scrapyard Team in History</p>
-    </div>
-</footer>
+    <section class="download">
+        <div class="container">
+            <h2>Ready to Cause Some Chaos?</h2>
+            <p>Download Zoomageddon now and transform your boring Zoom calls into unforgettable pranking experiences!
+            </p>
+            <button class="cta-button">
+                Download Zoomageddon
+                <svg class="download-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 15L12 3M12 15L8 11M12 15L16 11" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M2 17L2 19C2 20.1046 2.89543 21 4 21L20 21C21.1046 21 22 20.1046 22 19L22 17"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </section>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const downloadButtons = document.querySelectorAll('.cta-button');
+    <footer>
+        <div class="container">
+            <p>© 2025 CodeRed. - The Best Scrapyard Team in History</p>
+        </div>
+    </footer>
 
-        downloadButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                alert('Thanks for your interest in Zoomageddon! This is a concept app demonstration.');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const downloadButtons = document.querySelectorAll('.cta-button');
+
+            downloadButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    alert('Thanks for your interest in Zoomageddon! This is a concept app demonstration.');
+                });
             });
         });
-    });
-</script>
+    </script>
 </body>
 
 </html>
