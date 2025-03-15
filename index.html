@@ -83,6 +83,12 @@
             margin-right: auto;
         }
 
+        .hero .small-text {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 2rem;
+        }
+
         .cta-button {
             display: inline-flex;
             align-items: center;
@@ -301,6 +307,7 @@
                 <h1>Unleash Chaos on Your Zoom Calls</h1>
                 <p>Zoomageddon is the ultimate prank app that will turn your boring video calls into hilarious chaos
                     with random sounds, criticisms, and chat spam! Powered by Groq AI!</p>
+                <p class="small-text">Made with ❤️ by CodeRed. - The best Scrapyard team in existence</p>
                 <button class="cta-button">
                     Download Now
                     <svg class="download-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -403,47 +410,51 @@
                     <h3>platform</h3>
                     <p>For cross-platform compatibility</p>
                     <span class="module-badge">Module</span>
-                </div>
+                    </div>
+                    
+                    <div class="dependency-item">
+                        <div class="feature-icon">🎬</div>
+                        <h3>moviepy</h3>
+                        <p>Audio processing for random sound effects</p>
+                        <span class="version-badge">v1.0.3</span>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+                    
+                    <section class="download">
+                        <div class="container">
+                            <h2>Ready to Cause Some Chaos?</h2>
+                            <p>Download Zoomageddon now and transform your boring Zoom calls into unforgettable pranking experiences!</p>
+                            <button class="cta-button">
+                                Download Zoomageddon
+                                <svg class="download-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 15L12 3M12 15L8 11M12 15L16 11" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M2 17L2 19C2 20.1046 2.89543 21 4 21L20 21C21.1046 21 22 20.1046 22 19L22 17" stroke="white"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </section>
+                    
+                    <footer>
+                        <div class="container">
+                            <p>© 2025 CodeRed. - The Best Scrapyard Team in History</p>
+                        </div>
+                    </footer>
+                    
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const downloadButtons = document.querySelectorAll('.cta-button');
 
-                <div class="dependency-item">
-                    <div class="feature-icon">🎬</div>
-                    <h3>moviepy</h3>
-                    <p>Audio processing for random sound effects</p>
-                    <span class="version-badge">v1.0.3</spans>
-
-<section class="download">
-    <div class="container">
-        <h2>Ready to Cause Some Chaos?</h2>
-        <p>Download Zoomageddon now and transform your boring Zoom calls into unforgettable pranking experiences!</p>
-        <button class="cta-button">
-            Download Zoomageddon
-            <svg class="download-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 15L12 3M12 15L8 11M12 15L16 11" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M2 17L2 19C2 20.1046 2.89543 21 4 21L20 21C21.1046 21 22 20.1046 22 19L22 17" stroke="white"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </button>
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <p>© 2025 CodeRed. - The Best Scrapyard Team in History</p>
-    </div>
-</footer>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const downloadButtons = document.querySelectorAll('.cta-button');
-
-        downloadButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                alert('Thanks for your interest in Zoomageddon! This is a concept app demonstration.');
-            });
-        });
-    });
-</script>
-</body>
-
-</html>
+                            downloadButtons.forEach(button => {
+                                button.addEventListener('click', function () {
+                                    alert('Thanks for your interest in Zoomageddon! This is a concept app demonstration.');
+                                });
+                            });
+                        });
+                    </script>
+                    </body>
+                    
+                    </html>
